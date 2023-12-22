@@ -20,7 +20,7 @@ node () {
 
 	stage('Quality check') {
 		withSonarQubeEnv('Sonar') {
-			bat "mvn verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=jenkins-demo"
+			bat "mvn verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=Jenkins-Demo"
 		}
 	}
 	stage ('Jenkins DEV Token_Sample_APP_IC - Post build actions') {
